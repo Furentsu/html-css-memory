@@ -23,7 +23,7 @@ body {
     float: left;
 }
 
-.row::after {
+.clearfix::after {
     content: '';
     display: table;
     clear: both;
@@ -32,9 +32,32 @@ body {
 .card {
     width: calc(25% - 30px);
     height: 200px;
-    background-color: white;
     margin: 15px 15px 20px 15px;
+    background-image: url("../img/pattern.png");
+    background-size: contain; 
 }
+
+.image {
+    display: none;
+    background-color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.image img {
+    width: 100%;
+    padding: 10px;
+}
+
+.card:hover .image {
+    display: contents;
+}
+
+
+
+
+
+
 
 
 
