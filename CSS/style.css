@@ -5,7 +5,8 @@
 }
 
 body {
-    background-color: aqua;
+    background-color: rgb(167, 229, 250);
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 #game-name {
@@ -15,8 +16,7 @@ body {
 
 .container {
     width: 800px;
-    background-color: blue;
-    margin: 20px auto;
+    margin: 20px auto 10px;
 }
 
 .float {
@@ -31,17 +31,17 @@ body {
 
 .card {
     width: calc(25% - 30px);
-    height: 200px;
+    height: 220px;
     margin: 15px 15px 20px 15px;
     background-image: url("../img/pattern.png");
     background-size: contain; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .image {
     display: none;
-    background-color: white;
     text-align: center;
-    z-index: 2;
 }
 
 .image img {
@@ -49,27 +49,39 @@ body {
     padding: 10px;
 }
 
+.image > h4 {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
 .card:hover .image {
     display: contents;
 }
 
+.card:hover {
+    background-image: none;
+    background-color: white;
+}
 
+#special-card {
+    background-image: none;
+    background-color: white;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+#special-card .image {
+    display: contents;
+}
 
 #lastline {
-    text-align: center;
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
 
+#lastline h4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
