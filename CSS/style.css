@@ -4,3 +4,47 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: aqua;
+}
+
+#game-name {
+    text-align: center;
+    padding: 30px;
+}
+
+.container {
+    width: 800px;
+    background-color: blue;
+    margin: 20px auto;
+}
+
+.float {
+    float: left;
+}
+
+.row::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.card {
+    width: calc(25% - 30px);
+    height: 200px;
+    background-color: white;
+    margin: 15px 15px 20px 15px;
+}
+
+
+
+
+
+
+
+
+#lastline {
+    text-align: center;
+
+}
+
